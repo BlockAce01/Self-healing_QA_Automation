@@ -1,9 +1,10 @@
 from selenium.webdriver.common.by import By
+from .BasePage import BasePage
 
-class CheckoutStepTwoPage:
+class CheckoutStepTwoPage(BasePage):
     def __init__(self, driver):
-        self.driver = driver
+        super().__init__(driver)
         self.finish_button = (By.ID, "finish")
 
     def click_finish(self):
-        self.driver.find_element(*self.finish_button).click()
+        self._click(self.finish_button)
