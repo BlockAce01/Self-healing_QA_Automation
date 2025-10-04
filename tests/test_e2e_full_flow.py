@@ -39,19 +39,19 @@ try:
     inventory_page.add_backpack_to_cart()
     inventory_page.go_to_cart()
     print("SUCCESS: Navigated to the cart.")
-    time.sleep(2)  
+    time.sleep(1)  
 
     # Step 3
     print("Step 3: Clicking checkout...")
     cart_page.click_checkout()
     print("SUCCESS: On the checkout information page.")
-    time.sleep(2)  
+    time.sleep(1)  
 
     # Step 4
     print("Step 4: Filling out user information...")
     checkout_one_page.fill_out_form("Test", "User", "12345")
     print("SUCCESS: Information filled and continued to overview.")
-    time.sleep(2)  
+    time.sleep(1)  
 
     # Step 5
     print("Step 5: Clicking the finish button...")
